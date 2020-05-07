@@ -1,51 +1,60 @@
 <DERExt>
- <Entity strongEnt="  Usuario  " x="-525" y="-97" width="65" name="  Grupo  " weak="1">
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Id_grupo" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Nickname" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Foto_perfil" null="1" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Texto_informacion" null="1" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-295" width="65" subtype="1" y="-94" name="  Unico  " isAssociative="0">
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Id_Unico"/>
  </Entity>
- <Entity subtype="0" isAssociative="0" x="-1026" y="393" width="75" name="  Adjunto  ">
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="1" name="Id_adjunto" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Tamaño" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Ubicacion_actual" null="0" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-426" width="60" subtype="0" y="115" name="  Chat  " isAssociative="0">
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Id_chat"/>
  </Entity>
- <Entity subtype="1" isAssociative="0" x="-704" y="547" width="65" name="  Video  ">
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Duracion" null="0" type="integer" cant2="0" cant3="2"/>
-  <Compound mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Resolucion" null="0" amount="2">
-   <Simple cant1="20" mult="0" sk="0" parent="Resolucion" optionSQL="1" pk="0" name="Ancho" null="0" type="integer" cant2="0" cant3="2"/>
-   <Simple cant1="20" mult="0" sk="0" parent="Resolucion" optionSQL="1" pk="0" name="Alto" null="0" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-594" width="65" subtype="1" y="-101" name="  Grupo  " isAssociative="0">
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="1" cant2="0" null="0" type="integer" cant1="20" parent="" name="Id_grupo"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Nickname"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="1" type="integer" cant1="20" parent="" name="Foto_perfil"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="1" type="integer" cant1="20" parent="" name="Texto_informacion"/>
+ </Entity>
+ <Entity x="-894" width="75" subtype="0" y="266" name="  Adjunto  " isAssociative="0">
+  <Simple optionSQL="1" pk="1" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Id_adjunto"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Tama?o"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Ubicacion_actual"/>
+ </Entity>
+ <Entity x="-431" width="65" subtype="1" y="206" name="  Video  " isAssociative="0">
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Duracion"/>
+  <Compound amount="2" optionSQL="1" pk="0" mult="0" sk="0" null="0" parent="" name="Resolucion">
+   <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="Resolucion" name="Ancho"/>
+   <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="Resolucion" name="Alto"/>
   </Compound>
  </Entity>
- <Entity subtype="1" isAssociative="0" x="-976" y="540" width="70" name="  Imagen  ">
-  <Compound mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Resolucion_Imagen" null="0" amount="2">
-   <Simple cant1="20" mult="0" sk="0" parent="Resolucion_Imagen" optionSQL="1" pk="0" name="Ancho" null="0" type="integer" cant2="0" cant3="2"/>
-   <Simple cant1="20" mult="0" sk="0" parent="Resolucion_Imagen" optionSQL="1" pk="0" name="Alto" null="0" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-441" width="70" subtype="1" y="280" name="  Imagen  " isAssociative="0">
+  <Compound amount="2" optionSQL="1" pk="0" mult="0" sk="0" null="0" parent="" name="Resolucion_Imagen">
+   <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="Resolucion_Imagen" name="Ancho"/>
+   <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="Resolucion_Imagen" name="Alto"/>
   </Compound>
  </Entity>
- <Entity subtype="0" isAssociative="0" x="-1161" y="-97" width="75" name="  Usuario  ">
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="1" name="Num_Telefono" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="1" parent="" optionSQL="1" pk="0" name="Email" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Nombre" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Apellido" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Nickname" null="1" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Foto_perfil" null="1" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Texto_informacion" null="1" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-1112" width="75" subtype="0" y="-101" name="  Usuario  " isAssociative="0">
+  <Simple optionSQL="1" pk="1" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Num_Telefono"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="1" cant2="0" null="0" type="integer" cant1="20" parent="" name="Email"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Nombre"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Apellido"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="1" type="integer" cant1="20" parent="" name="Nickname"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="1" type="integer" cant1="20" parent="" name="Foto_perfil"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="1" type="integer" cant1="20" parent="" name="Texto_informacion"/>
  </Entity>
- <Entity subtype="0" isAssociative="0" x="-1029" y="200" width="75" name="  Mensaje  ">
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Autor" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Texto" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Fecha_enviado" null="0" type="integer" cant2="0" cant3="2"/>
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Hora_enviado" null="0" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-1182" width="75" subtype="0" y="118" name="  Mensaje  " isAssociative="0">
+  <Simple optionSQL="1" pk="1" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Id_mensaje"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Texto"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Fecha_enviado"/>
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Hora_enviado"/>
  </Entity>
- <Entity subtype="1" isAssociative="0" x="-1216" y="539" width="65" name="  Audio  ">
-  <Simple cant1="20" mult="0" sk="0" parent="" optionSQL="1" pk="0" name="Duracion" null="0" type="integer" cant2="0" cant3="2"/>
+ <Entity x="-531" width="65" subtype="1" y="329" name="  Audio  " isAssociative="0">
+  <Simple optionSQL="1" pk="0" mult="0" cant3="2" sk="0" cant2="0" null="0" type="integer" cant1="20" parent="" name="Duracion"/>
  </Entity>
- <Entity subtype="0" isAssociative="1" x="-1171" y="-127" width="1151" name="  chat  " associationRel="  Tiene  "/>
- <RBinary min1="0" firstWeak="0" match1="simple" x="-990.5" name="  Podria_contener  " min0="1" y="316.5" width="105" max0="1" max1="1" name1="  Adjunto  " match0="simple" onDelete1="restrict" onUpdate0="restrict" onDelete0="restrict" rolename="" name0="  Mensaje  " dep="0" onUpdate1="restrict"/>
- <RBinary min1="0" firstWeak="0" match1="simple" x="-793" name="  Administra  " min0="1" y="-193" width="80" max0="1" max1="N" name1="  Grupo  " match0="simple" onDelete1="restrict" onUpdate0="restrict" onDelete0="restrict" rolename="" name0="  Usuario  " dep="1" onUpdate1="restrict"/>
- <RBinary min1="0" firstWeak="0" match1="simple" x="-1123" name="  Escribe  " min0="1" y="109" width="65" max0="N" max1="N" name1="  Mensaje  " match0="simple" onDelete1="restrict" onUpdate0="restrict" onDelete0="restrict" rolename="" name0="  Usuario  " dep="0" onUpdate1="restrict"/>
- <RBinary min1="1" firstWeak="0" match1="simple" x="-809" name="  Se_envia  " min0="1" y="111" width="70" max0="N" max1="N" name1="  Mensaje  " match0="simple" onDelete1="restrict" onUpdate0="restrict" onDelete0="restrict" rolename="" name0="  chat  " dep="0" onUpdate1="restrict"/>
- <RBinary min1="0" firstWeak="0" match1="simple" x="-792" name="  Tiene  " min0="1" y="-71" width="55" max0="N" max1="N" name1="  Grupo  " match0="simple" onDelete1="restrict" onUpdate0="restrict" onDelete0="restrict" rolename="" name0="  Usuario  " dep="0" onUpdate1="restrict"/>
- <Hierarchy name3="  Audio  " centerY="491" centerX="-991" name0="  Adjunto  " typeName="" cont="4" exclusive="true" name="Hierarchy   Adjunto  " name1="  Video  " total="false" name2="  Imagen  "/>
+ <Hierarchy centerX="-610" typeName=" " centerY="281" name0="  Adjunto  " name3="  Audio  " exclusive="false" total="true" name1="  Video  " cont="4" name="Hierarchy   Adjunto  " name2="  Imagen  "/>
+ <RUnary max1="N" x="-1269" onUpdate0="restrict" min1="0" width="75" onUpdate1="restrict" match1="simple" max0="1" onDelete0="restrict" onDelete1="restrict" name0="  Mensaje  " match0="simple" name1="  Mensaje  " rolename="" y="254" min0="0" name="  Responder  "/>
+ <RUnary max1="N" x="-1269" onUpdate0="restrict" min1="0" width="75" onUpdate1="restrict" match1="simple" max0="1" onDelete0="restrict" onDelete1="restrict" name0="  Mensaje  " match0="simple" name1="  Mensaje  " rolename="" y="12" min0="0" name="  Reenviado  "/>
+ <RBinary onUpdate1="restrict" onDelete0="restrict" x="-800" rolename="" match1="simple" name0="  Unico  " max1="2" dep="0" max0="1" onDelete1="restrict" firstWeak="0" width="65" name="  Compone  " onUpdate0="restrict" min1="2" name1="  Usuario  " min0="0" y="-209" match0="simple"/>
+ <Hierarchy centerX="-400" typeName=" " centerY="63" name0="  Chat  " exclusive="false" total="true" name1="  Unico  " cont="3" name="Hierarchy   Chat  " name2="  Grupo  "/>
+ <RBinary onUpdate1="restrict" onDelete0="restrict" x="-770" rolename="" match1="simple" name0="  Mensaje  " max1="1" dep="0" max0="N" onDelete1="restrict" firstWeak="0" width="70" name="  Se_envia  " onUpdate0="restrict" min1="1" name1="  Chat  " min0="1" y="137" match0="simple"/>
+ <RBinary onUpdate1="restrict" onDelete0="restrict" x="-1102" rolename="" match1="simple" name0="  Mensaje  " max1="1" dep="0" max0="1" onDelete1="restrict" firstWeak="0" width="70" name="  Contiene  " onUpdate0="restrict" min1="0" name1="  Adjunto  " min0="1" y="288" match0="simple"/>
+ <RBinary onUpdate1="restrict" onDelete0="restrict" x="-803" rolename="" match1="simple" name0="  Usuario  " max1="N" dep="0" max0="N" onDelete1="restrict" firstWeak="0" width="80" name="  Administra  " onUpdate0="restrict" min1="0" name1="  Grupo  " min0="1" y="-154" match0="simple"/>
+ <RBinary onUpdate1="restrict" onDelete0="restrict" x="-1072" rolename="" match1="simple" name0="  Usuario  " max1="N" dep="0" max0="1" onDelete1="restrict" firstWeak="0" width="55" name="  Emite  " onUpdate0="restrict" min1="0" name1="  Mensaje  " min0="1" y="59" match0="simple"/>
+ <RBinary onUpdate1="restrict" onDelete0="restrict" x="-789" rolename="" match1="simple" name0="  Usuario  " max1="N" dep="0" max0="N" onDelete1="restrict" firstWeak="0" width="55" name="  Tiene  " onUpdate0="restrict" min1="0" name1="  Grupo  " min0="1" y="-102" match0="simple"/>
 </DERExt>
