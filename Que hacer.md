@@ -4,17 +4,17 @@ SECCION 1:MODELO LOGICO
 	REVISADO [X] 
 	CORREGIDO [ ]
 [X] 1.2 ESPECIFICACION FORMAL. 
-	REVISADO [ ] 
+	REVISADO [X] 
 	CORREGIDO [ ]
 
 SECCION 2: DISEÑO FISICO
 
-[ ] 2.1 ANALISIS DE LAS TRANSACCIONES. CORREGIDO [ ]
+[ ] 2.1 ANALISIS DE LAS TRANSACCIONES.
 	[X] MATRIZ DE REFERENCIAS CRUZADAS. 
 		REVISADO [X] 
-		CORREGIDO [ ]
-	[ ] MAPA DE LAS TRANSACCIONES. 
-		CORREGIDO [ ]
+		CORREGIDO [X]
+	[X] MAPA DE LAS TRANSACCIONES. 
+		CORREGIDO [X]
 
 		● las columnas o atributos utilizados en las condiciones de búsqueda.
 		● las columnas o atributos de salida de las consultas.
